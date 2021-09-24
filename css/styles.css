@@ -1,7 +1,8 @@
 /*Global*/
 
 .logo,
-h1 {
+h1,
+h2 {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -15,7 +16,7 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
-  margin: 0px;
+  margin: 0px auto;
 }
 
 header,
@@ -30,6 +31,7 @@ footer {
 
 footer {
   justify-content: center;
+  margin-top: 200px;
 }
 
 #logo--smaller {
@@ -41,6 +43,13 @@ a,
 label {
   text-decoration: none;
   color: antiquewhite;
+}
+
+.blue-header {
+  color: #022859;
+  font-size: 2rem;
+  text-align: center;
+  margin: 50px 0px;
 }
 
 /*Navigation*/
@@ -81,4 +90,15 @@ nav {
 
 #hamburger:checked ~ nav {
   display: block;
+}
+
+/*Links*/
+.cta {
+  background-color: #0367a6;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.cta:hover {
+  background-color: #1d4c88;
 }

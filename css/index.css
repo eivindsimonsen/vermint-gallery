@@ -1,0 +1,111 @@
+/*Welcome section*/
+
+.welcome {
+  max-width: 900px;
+  margin: 0px auto;
+}
+
+.welcome > * {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.welcome img {
+  width: 900px;
+  height: 450px;
+}
+
+.welcome__content img {
+  position: relative;
+}
+
+.welcome__content h1 {
+  color: white;
+  font-size: 2.5rem;
+  padding: 20px 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 900px;
+  top: 323px;
+}
+
+.current-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-image img {
+  padding: 5px 3px;
+  width: 50px;
+  height: 30px;
+}
+
+#current-image__active {
+  width: 60px;
+  height: 40px;
+}
+
+/*Latest art section*/
+
+.latest-art {
+  text-align: center;
+  background-color: #ddf4f9;
+  margin-top: 100px;
+  padding: 20px 0px 50px 0px;
+}
+
+.latest-art p {
+  text-align: left;
+}
+
+.latest-art img {
+  width: 230px;
+  height: 230px;
+}
+
+.latest-art-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.latest-art-flex > * {
+  padding: 0px 25px;
+}
+
+.latest-art-flex img {
+  border: 1px solid #022859;
+}
+
+.cta-margin {
+  margin-top: 50px;
+}
+
+/*Reviews section*/
+
+.reviews-flex {
+  max-width: 1000px;
+  display: flex;
+  margin: 0px auto;
+}
+
+.reviews-flex > * {
+  display: flex;
+}
+
+.reivews-flex__margin > * {
+  margin-right: 30px;
+}
+
+.fa-user {
+  color: white;
+  background-color: #0367a6;
+  padding: 40px;
+  border-radius: 50%;
+}
+
+.fa-star {
+  color: gold;
+  font-size: 30px;
+}
