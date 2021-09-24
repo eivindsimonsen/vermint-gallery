@@ -10,9 +10,9 @@
   margin-top: 60px;
 }
 
-.welcome img {
-  width: 900px;
-  height: 450px;
+.welcome-image img {
+  width: 300px;
+  height: 200px;
 }
 
 .welcome__content img {
@@ -20,13 +20,17 @@
 }
 
 .welcome__content h1 {
-  color: white;
-  font-size: 2.5rem;
-  padding: 20px 0px;
+  color: var(--header-footer-links);
+  padding: 10px 0px;
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
-  width: 900px;
-  top: 323px;
+  width: 300px;
+  top: 206px;
+}
+
+.header-background {
+  display: flex;
+  justify-content: center;
 }
 
 .current-image {
@@ -37,20 +41,20 @@
 
 .current-image img {
   padding: 5px 3px;
-  width: 50px;
-  height: 30px;
+  width: 30px;
+  height: 20px;
 }
 
 #current-image__active {
-  width: 60px;
-  height: 40px;
+  width: 40px;
+  height: 27px;
 }
 
 /*Latest art section*/
 
 .latest-art {
   text-align: center;
-  background-color: #ddf4f9;
+  background-color: var(--background-lightblue);
   margin-top: 100px;
   padding: 20px 0px 50px 0px;
 }
@@ -66,16 +70,16 @@
 
 .latest-art-flex {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .latest-art-flex > * {
-  padding: 0px 25px;
+  padding: 15px 25px;
 }
 
 .latest-art-flex img {
-  border: 1px solid #022859;
+  border: 1px solid var(--dark-blue);
 }
 
 .cta-margin {
@@ -85,22 +89,14 @@
 /*Reviews section*/
 
 .reviews-flex {
-  max-width: 1000px;
-  display: flex;
+  max-width: 300px;
   margin: 0px auto;
-}
-
-.reviews-flex > * {
-  display: flex;
-}
-
-.reivews-flex__margin > * {
-  margin-right: 30px;
+  text-align: center;
 }
 
 .fa-user {
-  color: white;
-  background-color: #0367a6;
+  color: var(--header-footer-links);
+  background-color: var(--cta-blue);
   padding: 40px;
   border-radius: 50%;
 }
@@ -108,4 +104,5 @@
 .fa-star {
   color: gold;
   font-size: 30px;
+  margin-bottom: 60px;
 }

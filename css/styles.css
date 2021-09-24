@@ -1,3 +1,5 @@
+@import url(../css/imports/variables.css);
+
 /*Global*/
 
 .logo,
@@ -31,7 +33,7 @@ footer {
 
 footer {
   justify-content: center;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 #logo--smaller {
@@ -42,11 +44,11 @@ a,
 .logo,
 label {
   text-decoration: none;
-  color: antiquewhite;
+  color: var(--header-footer-links);
 }
 
 .blue-header {
-  color: #022859;
+  color: var(--dark-blue);
   font-size: 2rem;
   text-align: center;
   margin: 50px 0px;
@@ -94,11 +96,11 @@ nav {
 
 /*Links*/
 .cta {
-  background-color: #0367a6;
+  background-color: var(--cta-blue);
   padding: 15px;
   border-radius: 10px;
 }
 
 .cta:hover {
-  background-color: #1d4c88;
+  background-color: var(--cta-blue-hover);
 }

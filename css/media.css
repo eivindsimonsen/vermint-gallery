@@ -1,3 +1,27 @@
+@media (min-width: 627px) {
+  .welcome-image img {
+    width: 600px;
+    height: 350px;
+  }
+
+  .welcome__content h1 {
+    font-size: 1.8rem;
+    padding: 20px 0px;
+    width: 600px;
+    top: 263px;
+  }
+
+  #current-image__active {
+    width: 60px;
+    height: 40px;
+  }
+
+  .current-image img {
+    width: 50px;
+    height: 30px;
+  }
+}
+
 @media (min-width: 800px) {
   .logo {
     font-size: 2.5rem;
@@ -26,5 +50,41 @@
   header,
   footer {
     padding: 1.2rem;
+  }
+
+  .welcome__content h1 {
+    top: 292px;
+  }
+}
+
+@media (min-width: 939px) {
+  .welcome-image img {
+    width: 900px;
+    height: 450px;
+  }
+
+  .welcome__content h1 {
+    font-size: 2.5rem;
+    width: 900px;
+    top: 323px;
+  }
+
+  .latest-art-flex {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .reviews-flex,
+  .reviews-flex > * {
+    display: flex;
+  }
+
+  .reviews-flex {
+    max-width: 900px;
+    text-align: left;
+  }
+
+  .reviews-flex__margin > * {
+    margin-right: 30px;
   }
 }
