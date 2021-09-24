@@ -1,0 +1,16 @@
+@media (min-width: 700px) {
+  nav {
+    display: block;
+    position: static;
+    background: none;
+  }
+
+  header label {
+    display: none;
+  }
+
+  header ul,
+  ul a {
+    display: inline-block;
+  }
+}

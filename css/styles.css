@@ -1,3 +1,5 @@
+/*Global*/
+
 .logo,
 h1 {
   font-family: "Montserrat", sans-serif;
@@ -31,16 +33,48 @@ footer {
 }
 
 a,
-.logo {
+.logo,
+label {
   text-decoration: none;
   color: antiquewhite;
 }
+
+/*Navigation*/
 
 nav a {
   margin: 0px 30px;
   font-size: 1.3rem;
 }
 
+label {
+  font-size: 1.7rem;
+}
+
 nav a:hover {
   text-decoration: underline;
+}
+
+header ul,
+ul a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+nav {
+  display: none;
+  background: rgb(2, 40, 89);
+  background: linear-gradient(267deg, rgba(2, 40, 89, 1) 0%, rgba(4, 157, 217, 1) 100%);
+  position: fixed;
+  top: 93px;
+  z-index: 1000;
+  right: 0px;
+}
+
+#hamburger {
+  display: none;
+}
+
+#hamburger:checked ~ nav {
+  display: block;
 }
