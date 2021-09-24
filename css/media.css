@@ -1,4 +1,12 @@
-@media (min-width: 700px) {
+@media (min-width: 800px) {
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .logo a {
+    margin-left: 40px;
+  }
+
   nav {
     display: block;
     position: static;
@@ -13,5 +21,10 @@
   ul a {
     display: inline-block;
     padding: 0px;
+  }
+
+  header,
+  footer {
+    padding: 1.2rem;
   }
 }
