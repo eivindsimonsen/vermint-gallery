@@ -14,7 +14,8 @@ main {
 
 .logo,
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -41,9 +42,20 @@ footer {
   justify-content: space-between;
 }
 
+.fa-user {
+  color: var(--header-footer-links);
+  background-color: var(--cta-blue);
+  padding: 40px;
+  border-radius: 50%;
+}
+
 footer {
   justify-content: center;
   margin-top: 100px;
+}
+
+.social {
+  font-size: 2rem;
 }
 
 #logo--smaller {
@@ -57,11 +69,16 @@ label {
   color: var(--header-footer-links);
 }
 
-.blue-header {
+.blue-header,
+.blue-header__h3 {
   color: var(--dark-blue);
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   margin: 20px 0px;
+}
+
+.blue-header__h3 {
+  font-size: 2rem;
 }
 
 .current {

@@ -1,0 +1,15 @@
+.about-paragraph {
+  max-width: 400px;
+  margin: 0px auto;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+
+.about-paragraph > * {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-user {
+  margin-top: 20px;
+}

@@ -1,0 +1,72 @@
+.contact-info > * {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info hr {
+  border: 1px solid var(--dark-blue);
+  max-width: 1000px;
+  margin-top: 20px;
+}
+
+.contact-info p {
+  font-size: 1.5rem;
+}
+
+.contact-info span {
+  color: var(--cta-blue);
+  margin-left: 10px;
+}
+
+.fa-user {
+  margin: 10px 0px;
+}
+
+form {
+  max-width: 700px;
+  margin: 0px auto;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px;
+}
+
+.form-wrapper > input,
+textarea {
+  border: 1px solid var(--dark-blue);
+  margin: 5px 0px 10px 0px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.form-wrapper label {
+  color: black;
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+
+.form-wrapper > button {
+  margin: 30px auto;
+  border: none;
+  max-width: 200px;
+  font-size: 1rem;
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--header-footer-links);
+}
+
+.form-error {
+  display: none;
+  color: red;
+}
+
+#contact-message {
+  background-color: lightgreen;
+  padding: 20px;
+  width: 250px;
+  border-radius: 25px;
+  text-align: center;
+  margin: 10px auto 40px auto;
+  display: none;
+}

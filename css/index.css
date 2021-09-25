@@ -78,7 +78,8 @@
   padding: 15px 25px;
 }
 
-.latest-art-flex img {
+.latest-art-flex img,
+.welcome-image img {
   border: 1px solid var(--dark-blue);
 }
 
@@ -92,13 +93,6 @@
   max-width: 300px;
   margin: 0px auto;
   text-align: center;
-}
-
-.fa-user {
-  color: var(--header-footer-links);
-  background-color: var(--cta-blue);
-  padding: 40px;
-  border-radius: 50%;
 }
 
 .fa-star {
