@@ -1,5 +1,5 @@
 let slidesPosition = 0
-const slides = document.getElementsByClassName('carousel')
+const slides = document.getElementsByClassName('carousel_img')
 const totalSlides = slides.length
 
 console.log(totalSlides)

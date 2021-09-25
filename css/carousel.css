@@ -33,4 +33,5 @@
 .carousel-buttons button {
     border: none;
     background: none;
+    cursor: pointer;
 }
