@@ -1,5 +1,5 @@
 @media (min-width: 627px) {
-  .welcome-image img {
+  .carousel img {
     width: 600px;
     height: 350px;
   }
@@ -9,16 +9,6 @@
     padding: 20px 0px;
     width: 600px;
     top: 263px;
-  }
-
-  .active {
-    width: 60px;
-    height: 40px;
-  }
-
-  .carousel img {
-    width: 50px;
-    height: 30px;
   }
 
   .blue-header {
@@ -94,7 +84,7 @@
 }
 
 @media (min-width: 939px) {
-  .welcome-image img {
+  .carousel img {
     width: 900px;
     height: 450px;
   }

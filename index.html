@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
     <link rel="stylesheet" href="css/media.css" />
     <script src="https://kit.fontawesome.com/8bf4111a60.js" crossorigin="anonymous"></script>
   </head>
@@ -32,18 +33,33 @@
     <main>
       <section class="welcome">
         <div class="welcome__content">
-          <div class="welcome-image">
-            <img src="images/mainimage.jpg" alt="#" />
+          <div class="carousel">
+            <div class="carousel_img active">
+              <img src="images/mainimage.jpg" alt="#" />
+            </div>
+            <div class="carousel_img">
+              <img src="images/image5.jpg" alt="#" />  
+            </div>
+            <div class="carousel_img">
+              <img src="images/image3.jpg" alt="#" />
+            </div>
+            <div class="carousel_img">
+              <img src="images/image8.jpg" alt="#" /> 
+            </div>
+          </div>
+          <div class="carousel-buttons">
+            <button id="previous" aria-label="previous slide"><</button>
+            <button id="next" aria-label="next slide">></button>
           </div>
           <div class="header-background">
             <h1>Vermint Art Gallery</h1>
           </div>
-          <div class="current-image">
+          <!-- <div class="carousel">
             <img src="images/mainimage.jpg" id="current-image__active" alt="#" />
             <img src="images/image5.jpg" alt="#" />
             <img src="images/image3.jpg" alt="#" />
             <img src="images/image8.jpg" alt="#" />
-          </div>
+          </div> -->
         </div>
       </section>
       <section class="latest-art">
