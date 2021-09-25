@@ -27,6 +27,10 @@
 }
 
 @media (min-width: 800px) {
+  main {
+    margin-top: 0px;
+  }
+
   .fixed {
     position: static;
   }
