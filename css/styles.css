@@ -2,6 +2,12 @@
 
 /*Global*/
 
+.fixed {
+  position: fixed;
+  z-index: 1000;
+  width: -webkit-fill-available;
+}
+
 .logo,
 h1,
 h2 {
