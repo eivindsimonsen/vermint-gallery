@@ -15,10 +15,6 @@
   height: 200px;
 }
 
-.welcome__content img {
-  position: relative;
-}
-
 .welcome__content h1 {
   color: var(--header-footer-links);
   padding: 10px 0px;

@@ -4,6 +4,10 @@
     height: 350px;
   }
 
+  .carousel {
+    max-width: 600px;
+  }
+
   .welcome__content h1 {
     font-size: 1.8rem;
     padding: 20px 0px;
@@ -88,6 +92,11 @@
     width: 900px;
     height: 450px;
   }
+
+  .carousel {
+    max-width: 900px;
+  }
+
 
   .welcome__content h1 {
     font-size: 2.5rem;
