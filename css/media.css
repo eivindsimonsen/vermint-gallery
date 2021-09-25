@@ -4,6 +4,12 @@
     height: 350px;
   }
 
+  .fa-chevron-left,
+  .fa-chevron-right {
+    font-size: 2rem;
+    color: white;
+}
+
   .carousel {
     max-width: 600px;
   }
