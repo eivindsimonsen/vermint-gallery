@@ -23,10 +23,14 @@
     transform: translateY(-50%);
 }
 
-.carousel-buttons button {
-    border-radius: 50px;
-    border: 1px;
-    font-weight: bold;
-    padding: 10px 20px;
+.fa-chevron-left,
+.fa-chevron-right {
+    font-size: 2rem;
+    color: white;
 
+}
+
+.carousel-buttons button {
+    border: none;
+    background: none;
 }

@@ -18,6 +18,10 @@
   .blue-header {
     margin: 30px 0px;
   }
+
+  .header-background {
+    top: -42%;
+  }
 }
 
 @media (min-width: 800px) {
@@ -58,6 +62,10 @@
     padding: 1.2rem;
   }
 
+  .header-background {
+    top: -50%;
+  }
+
   .welcome__content h1 {
     top: 292px;
   }
@@ -91,6 +99,10 @@
   .carousel img {
     width: 900px;
     height: 450px;
+  }
+
+  .header-background {
+    top: -38%;
   }
 
   .carousel {
