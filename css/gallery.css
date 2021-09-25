@@ -1,0 +1,23 @@
+.gallery-grid {
+  display: grid;
+  max-width: 350px;
+  margin: 0px auto;
+}
+
+.gallery-grid h2 {
+  grid-column: -1/1;
+}
+
+.gallery-flex-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery-flex-content img {
+  width: 300px;
+  height: 300px;
+}
+
+hr {
+  border: 1px solid var(--dark-blue);
+}

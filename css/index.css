@@ -55,7 +55,7 @@
 .latest-art {
   text-align: center;
   background-color: var(--background-lightblue);
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 20px 0px 50px 0px;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .cta-margin {
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
 /*Reviews section*/
