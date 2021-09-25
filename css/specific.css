@@ -7,13 +7,12 @@ hr {
 }
 
 .specific-wrapper img {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
 }
 
 .specific-wrapper {
-  display: flex;
-  max-width: 800px;
+  max-width: 400px;
   margin: 0px auto;
   padding: 20px;
 }
@@ -50,12 +49,13 @@ hr {
 /*Might like section*/
 
 .might-like {
-  padding: 20px;
+  padding: 25px;
 }
 
 .might-like-flex {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
+  text-align: center;
 }
 
 .might-like img {
@@ -65,7 +65,7 @@ hr {
 }
 
 .might-like-wrapper {
-  display: flex;
+  /* display: flex; */
   justify-content: space-between;
   align-items: center;
 }
