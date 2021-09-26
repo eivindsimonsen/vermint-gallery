@@ -103,6 +103,11 @@ label {
   color: black;
 }
 
+#instagram {
+  color: var(--dark-blue);
+  font-size: 3rem;
+}
+
 /*Navigation*/
 
 nav a {

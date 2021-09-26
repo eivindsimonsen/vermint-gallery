@@ -1,17 +1,22 @@
-const url = "";
-const productContainer = document.querySelector(".gallery-grid");
+import { productArray } from "../js/productArray.js";
 
-async function getAll() {
+const gallery = document.querySelector(".gallery-grid");
 
-    try {
-        const response = await fetch(url);
-        const results = await response.json();
-        console.log(results)
+gallery.innerHTML = "";
 
+for (let i = 0; i < productArray.length; i++) {
+
+    if (productArray[i].sold === true) {
+        continue;
     }
-
-    catch(error) {
-        console.log(error);
-
-    }
+    
+    gallery.innerHTML += 
+    `
+    <div class="gallery-flex-content">
+            <img src="${productArray[i].image}" alt="${productArray[i].alt}" onclick="location.href='specific.html?id=${productArray[i].id}'" style="cursor: pointer" />
+            <p>${productArray[i].name}</p>
+            <hr />
+            <p>${productArray[i].price}</p>
+          </div>
+    `
 }

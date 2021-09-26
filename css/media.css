@@ -33,6 +33,11 @@
   .header-background {
     top: -42%;
   }
+
+  .about-paragraph {
+    max-width: 550px;
+    font-size: 1.4rem;
+  }
 }
 
 @media (min-width: 800px) {
