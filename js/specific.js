@@ -1,59 +1,85 @@
-import { productArray } from "../js/productArray.js";
-
 const specific = document.querySelector(".specific-wrapper");
+
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
-
 console.log(id);
 
-specific.innerHTML = "";
+const url = "http://www.vermintgallery.com/wp-json/wc/store/products/" + id;
 
-for (let i = 0; i < productArray.length; i++) {
+async function fetchId() {
+    try {
+        const response = await fetch(url);
+        const getId = await response.json();
 
-    //temporary
-if (i === 1) {
-    break;
+        console.log(getId)
+
+        createHTML(getId)
+    }
+    catch (error) {
+        console.log(error)
+    }
 }
+
+fetchId();
+
+function createHTML(getId) {
+    document.title = `Vermint | ${getId.name}`;
 
     specific.innerHTML += 
     `
     <div>
-        <img src="${productArray[i].image}" alt="${productArray[i].alt}" />
+        <img src="${getId.images[0].src}" alt="${getId.description}" />
     </div>
     <div>
-        <h2 class="blue-header blue-header__specific">${productArray[i].name}</h2>
-        <h3>${productArray[i].size}</h3>
-        <p class="paragraph-margin">${productArray[i].description}</p>
-        <p>${productArray[i].created}</p>
-        <p><span>${productArray[i].price}</span></p>
+        <h2 class="blue-header blue-header__specific">${getId.name}</h2>
+        <h3>${getId.short_description}</h3>
+        <p class="paragraph-margin">${getId.description}</p>
+        <p>${getId.tags[0].name}</p>
+        <p><span>${getId.prices.price.slice(0, 4)} kr</span></p>
     </div>
     `
 }
 
 // might like section
 
+const url2 = "http://www.vermintgallery.com/wp-json/wc/store/products";
 const mightLike = document.querySelector(".might-like-flex");
 
-mightLike.innerHTML = "";
+async function getProducts() {
+    try {
+        const response = await fetch(url2);
+        const getResults = await response.json();
+        console.log(getResults)
 
-for (let i = 0; i < productArray.length; i++) {
+        const product  = getResults;
 
-if (i === 3) {
-    break;
+        mightLike.innerHTML = ""
+
+        for (let i = 0; i < product.length; i++) {
+
+            if (i === 3) {
+                break;
+            }
+
+            mightLike.innerHTML += 
+            `
+            <div class="might-like">
+            <div>
+                <img src="${product[i].images[0].src}" alt="${product[i].description}" />
+                <p>${product[i].name}</p>
+            </div>
+                <div class="might-like-wrapper">
+                    <p><span>${product[i].prices.price.slice(0, 4)} kr</span></p>
+                    <a href="specific.html?id=${product[i].id}" class="cta">View</a>
+                </div>
+            </div>
+            `
+        }
+    }
+    catch (error) {
+        console.log(error);
+    }
 }
 
-    mightLike.innerHTML += 
-    `
-    <div class="might-like">
-        <div>
-            <img src="${productArray[i].image}" alt="${productArray[i].alt}" />
-            <p>${productArray[i].name}</p>
-        </div>
-        <div class="might-like-wrapper">
-            <p><span>${productArray[i].price}</span></p>
-            <a href="specific.html" class="cta">View</a>
-        </div>
-    </div>
-    `
-}
+getProducts();

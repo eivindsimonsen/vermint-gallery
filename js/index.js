@@ -21,7 +21,7 @@ async function getProducts() {
             `
             <div>
                 <div>
-                    <img src="${product[i].images[0].src}" alt="${product[i].description}" onclick="location.href='specific.html'" style="cursor: pointer" />
+                    <img src="${product[i].images[0].src}" alt="${product[i].description}" onclick="location.href='specific.html?id=${product[i].id}'" style="cursor: pointer" />
                 </div>
                 <div>
                     <p>${product[i].name}</p>
