@@ -72,7 +72,7 @@ label {
 .blue-header,
 .blue-header__h3 {
   color: var(--dark-blue);
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   margin: 20px 0px;
 }
