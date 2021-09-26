@@ -38,6 +38,14 @@
     max-width: 550px;
     font-size: 1.4rem;
   }
+
+  #info-flex {
+    flex-direction: row;
+  }
+
+  .contact-info > * {
+    align-items: none;
+  }
 }
 
 @media (min-width: 800px) {

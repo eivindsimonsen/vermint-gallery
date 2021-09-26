@@ -103,9 +103,22 @@ label {
   color: black;
 }
 
+.paragraph-no-flex {
+  margin-right: 30px;
+}
+
+#info-flex {
+  flex-direction: column;
+}
+
 #instagram {
   color: var(--dark-blue);
   font-size: 3rem;
+  padding: 20px;
+}
+
+.tiktok {
+  color: white;
 }
 
 /*Navigation*/
