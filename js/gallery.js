@@ -1,4 +1,4 @@
-const url = "http://www.vermintgallery.com/wp-json/wc/store/products?per_page=100";
+const url = "https://www.vermintgallery.com/wp-json/wc/store/products?per_page=100";
 const gallery = document.querySelector(".gallery-grid");
 
 async function getProducts() {

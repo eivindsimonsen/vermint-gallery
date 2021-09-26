@@ -5,7 +5,7 @@ const params = new URLSearchParams(queryString);
 const id = params.get("id");
 console.log(id);
 
-const url = "http://www.vermintgallery.com/wp-json/wc/store/products/" + id;
+const url = "https://www.vermintgallery.com/wp-json/wc/store/products/" + id;
 
 async function fetchId() {
     try {
@@ -43,7 +43,7 @@ function createHTML(getId) {
 
 // might like section
 
-const url2 = "http://www.vermintgallery.com/wp-json/wc/store/products";
+const url2 = "https://www.vermintgallery.com/wp-json/wc/store/products";
 const mightLike = document.querySelector(".might-like-flex");
 
 async function getProducts() {
