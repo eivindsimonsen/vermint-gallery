@@ -86,3 +86,7 @@
   font-size: 30px;
   margin-bottom: 60px;
 }
+
+.reviews-flex__margin p {
+  font-size: 1.2rem;
+}
